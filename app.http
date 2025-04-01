@@ -1,0 +1,65 @@
+get http://localhost:3000/register/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+
+//api 1
+POST http://localhost:3000/register/
+Content-Type : application/json
+{
+  "username": "Harshit",
+  "password": "1234567",
+  "name": "Harshit Jain",
+  "gender": "male"
+}
+
+
+//api2 
+POST http://localhost:3000/login/
+Content-Type : application/json
+{
+  "username":"JoeBiden",
+  "password":"biden@13"
+}
+
+
+//api 3 
+get http://localhost:3000/user/tweets/feed/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+get http://localhost:3000/user/following/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+get http://localhost:3000/user/followers/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+//6
+get http://localhost:3000/tweets/8/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+get http://localhost:3000/tweets/7/likes/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+get http://localhost:3000/tweets/1/replies/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+get http://localhost:3000/user/tweets/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+
+post http://localhost:3000/user/tweets/
+authorization :Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzM5Njg0MTE4fQ.2ZTioZBuFsxqeTRSErKZOxNX9MgkIvnFXPIHG3AmDdY
+
+Content-Type : application/json
+{
+   "tweet": "The Mornings is the best give my respect to your madre and say hello to your padre mi amor"
+}
+
+
+delete http://localhost:3000/tweets/3/
